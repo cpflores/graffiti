@@ -19,6 +19,6 @@ class Post < ActiveRecord::Base
 
   # This method will show the existing tags in our form
   def str_tags
-    tags.map(&:name).join(' ')
+    tags.map(&:name).join(', ')
   end
 end
